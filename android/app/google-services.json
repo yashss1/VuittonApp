@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "209740755732",
+    "project_id": "vuittonapp",
+    "storage_bucket": "vuittonapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:209740755732:android:5f1445929f2bf9d4060801",
+        "android_client_info": {
+          "package_name": "com.example.vuitton_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "209740755732-8blpderli8qojqt3arc0ulcmvocm0ijc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.vuitton_app",
+            "certificate_hash": "cce183ce4cfcdeebed75ed364485dc26c450bc98"
+          }
+        },
+        {
+          "client_id": "209740755732-i2hbfn6t2jju0mgvbvfjgbdbb28r37o3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBmzIORzX2IrdcsJFvQx4UQdQv9TcLBFLw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "209740755732-i2hbfn6t2jju0mgvbvfjgbdbb28r37o3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

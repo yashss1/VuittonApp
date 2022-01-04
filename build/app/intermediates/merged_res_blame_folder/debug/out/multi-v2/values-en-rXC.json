@@ -1,0 +1,36 @@
+{
+    "logs": [
+        {
+            "outputFile": "D:\\vuitton_club-finalv\\vuitton_club-finalv\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-en-rXC\\values-en-rXC.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\Yash Sonawane\\.gradle\\caches\\transforms-2\\files-2.1\\23dce2c664a62757c7c9eebc0507a723\\core-1.2.0\\res\\values-en-rXC\\values-en-rXC.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "203",
+                        "endOffsets": "254"
+                    },
+                    "to": {
+                        "startLines": "6",
+                        "startColumns": "4",
+                        "startOffsets": "863",
+                        "endColumns": "203",
+                        "endOffsets": "1062"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Yash Sonawane\\.gradle\\caches\\transforms-2\\files-2.1\\80639d7de61bdedddaff7f1166e0dec1\\browser-1.2.0\\res\\values-en-rXC\\values-en-rXC.xml",
+                    "from": {
+                        "startLines": "2,3,4,5",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,256,455,667",
+                        "endColumns": "200,198,211,195",
+                        "endOffsets": "251,450,662,858"
+                    }
+                }
+            ]
+        }
+    ]
+}
