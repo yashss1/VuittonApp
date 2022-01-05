@@ -136,7 +136,7 @@ class _GoodsState extends State<Goods> {
                                     SizedBox(height: 10),
                                     InkWell(
                                       onTap: () {
-                                        Navigator.pushReplacement(
+                                        Navigator.push(
                                           context,
                                           MaterialPageRoute(
                                             builder: (context) =>

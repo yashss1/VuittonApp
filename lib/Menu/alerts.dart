@@ -110,10 +110,7 @@ class _AlertsState extends State<Alerts> {
               children: [
                 Container(
                   child: InkWell(
-                    onTap: () => Navigator.pushAndRemoveUntil(
-                        context,
-                        MaterialPageRoute(builder: (context) => Home()),
-                        (route) => false),
+                    onTap: () => Navigator.pop(context),
                     child: Icon(
                       Icons.close,
                       size: 50,
@@ -131,8 +128,7 @@ class _AlertsState extends State<Alerts> {
                     future: getData(),
                     builder: (BuildContext context,
                         AsyncSnapshot<dynamic> snapshot) {
-                      if (snapshot.connectionState ==
-                          ConnectionState.waiting) {
+                      if (snapshot.connectionState == ConnectionState.waiting) {
                         return Center(
                           child: CircularProgressIndicator(),
                         );
@@ -174,8 +170,7 @@ class _AlertsState extends State<Alerts> {
                                         children: [
                                           SizedBox(height: 10),
                                           item(
-                                            s1: array[index]['Type'] !=
-                                                    "Repost"
+                                            s1: array[index]['Type'] != "Repost"
                                                 ? "Concierge - ${array[index]['Type']}"
                                                 : array[index]['Type'],
                                             s2: array[index]['Status'],
@@ -187,15 +182,13 @@ class _AlertsState extends State<Alerts> {
                                                 context,
                                                 MaterialPageRoute(
                                                   builder: (context) => array[
-                                                                  index]
-                                                              ['Type'] ==
+                                                              index]['Type'] ==
                                                           'Goods'
                                                       ? MoreInfoGoods(
                                                           index: index,
                                                           array: array,
                                                         )
-                                                      : array[index]
-                                                                  ['Type'] ==
+                                                      : array[index]['Type'] ==
                                                               'Flight'
                                                           ? MoreInfoFlights(
                                                               array: array,
@@ -204,15 +197,11 @@ class _AlertsState extends State<Alerts> {
                                                                       'Type'] ==
                                                                   'Repost'
                                                               ? MoreInfoRepost(
-                                                                  array:
-                                                                      array,
-                                                                  index:
-                                                                      index)
+                                                                  array: array,
+                                                                  index: index)
                                                               : MoreInfoCar(
-                                                                  array:
-                                                                      array,
-                                                                  index:
-                                                                      index),
+                                                                  array: array,
+                                                                  index: index),
                                                 ),
                                               );
                                             },

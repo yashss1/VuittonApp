@@ -92,8 +92,7 @@ class _CarsState extends State<Cars> {
                     future: getData(),
                     builder: (BuildContext context,
                         AsyncSnapshot<dynamic> snapshot) {
-                      if (snapshot.connectionState ==
-                          ConnectionState.waiting) {
+                      if (snapshot.connectionState == ConnectionState.waiting) {
                         return Center(
                           child: CircularProgressIndicator(),
                         );
@@ -101,22 +100,22 @@ class _CarsState extends State<Cars> {
 
                       return array == null
                           ? Container(
-                        width: MediaQuery.of(context).size.width,
-                        padding: EdgeInsets.only(
-                          top: MediaQuery.of(context).size.height * .3,
-                        ),
-                        child: Column(
-                          children: [
-                            Center(
-                              child: Text(
-                                "There is Nothing here...",
-                                textAlign: TextAlign.center,
-                                style: myStyle(20, 'Bizmo'),
+                              width: MediaQuery.of(context).size.width,
+                              padding: EdgeInsets.only(
+                                top: MediaQuery.of(context).size.height * .3,
                               ),
-                            ),
-                          ],
-                        ),
-                      )
+                              child: Column(
+                                children: [
+                                  Center(
+                                    child: Text(
+                                      "There is Nothing here...",
+                                      textAlign: TextAlign.center,
+                                      style: myStyle(20, 'Bizmo'),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            )
                           : ListView.builder(
                               physics: BouncingScrollPhysics(),
                               itemCount:
@@ -128,11 +127,10 @@ class _CarsState extends State<Cars> {
                                     SizedBox(height: 10),
                                     InkWell(
                                       onTap: () {
-                                        Navigator.pushReplacement(
+                                        Navigator.push(
                                           context,
                                           MaterialPageRoute(
-                                            builder: (context) =>
-                                                Individualnfo(
+                                            builder: (context) => Individualnfo(
                                               array: array,
                                               index: index,
                                             ),

@@ -133,7 +133,7 @@ class _FlightsState extends State<Flights> {
                                     SizedBox(height: 10),
                                     InkWell(
                                       onTap: () {
-                                        Navigator.pushReplacement(
+                                        Navigator.push(
                                           context,
                                           MaterialPageRoute(
                                             builder: (context) =>

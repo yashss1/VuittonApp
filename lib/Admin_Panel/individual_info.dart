@@ -217,8 +217,7 @@ class _IndividualnfoState extends State<Individualnfo> {
                                       s1: "Drop Off : ",
                                       s2: "${widget.array[widget.index]['ArrivalCode']}",
                                     )
-                                  : widget.array[widget.index]['Type'] ==
-                                          "Car"
+                                  : widget.array[widget.index]['Type'] == "Car"
                                       ? items(
                                           s1: "Drop Off : ",
                                           s2: "${widget.array[widget.index]['Location']}",
@@ -256,7 +255,7 @@ class _IndividualnfoState extends State<Individualnfo> {
                   Container(
                     alignment: Alignment.center,
                     child: button(
-                      onPressed: () => Navigator.pushReplacement(
+                      onPressed: () => Navigator.push(
                           context,
                           MaterialPageRoute(
                               builder: (context) => SendUpdate(
@@ -268,7 +267,6 @@ class _IndividualnfoState extends State<Individualnfo> {
                       child: Text("SEND UPDATE"),
 
                       // ignore: prefer_const_constructors
-                      
                     ),
                   ),
                   SizedBox(
@@ -282,12 +280,10 @@ class _IndividualnfoState extends State<Individualnfo> {
                             ? getData("PrivateCharter", "Flight", "Booked")
                             : widget.array[widget.index]['Type'] == "Car"
                                 ? getData("CarRental", "Car", "Booked")
-                                : widget.array[widget.index]['Type'] ==
-                                        "Repost"
+                                : widget.array[widget.index]['Type'] == "Repost"
                                     ? getData(
                                         "RepostRequests", "Repost", "Booked")
-                                    : getData(
-                                        "LuxuryGoods", "Goods", "Booked");
+                                    : getData("LuxuryGoods", "Goods", "Booked");
                       },
                       child: Text("MARK AS BOOKED"),
 
@@ -323,8 +319,7 @@ class _IndividualnfoState extends State<Individualnfo> {
                             ? getData("PrivateCharter", "Flight", "Shipped")
                             : widget.array[widget.index]['Type'] == "Car"
                                 ? getData("CarRental", "Car", "Shipped")
-                                : widget.array[widget.index]['Type'] ==
-                                        "Repost"
+                                : widget.array[widget.index]['Type'] == "Repost"
                                     ? getData(
                                         "RepostRequests", "Repost", "Shipped")
                                     : getData(
@@ -364,12 +359,10 @@ class _IndividualnfoState extends State<Individualnfo> {
                             ? getData("PrivateCharter", "Flight", "Denied")
                             : widget.array[widget.index]['Type'] == "Car"
                                 ? getData("CarRental", "Car", "Denied")
-                                : widget.array[widget.index]['Type'] ==
-                                        "Repost"
+                                : widget.array[widget.index]['Type'] == "Repost"
                                     ? getData(
                                         "RepostRequests", "Repost", "Denied")
-                                    : getData(
-                                        "LuxuryGoods", "Goods", "Denied");
+                                    : getData("LuxuryGoods", "Goods", "Denied");
                       },
                       child: Text("MARK AS DENIED"),
 

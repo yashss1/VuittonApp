@@ -137,7 +137,7 @@ class _MenuState extends State<Menu> {
                       ),
                     ),
                     InkWell(
-                      onTap: () => Navigator.pushReplacement(context,
+                      onTap: () => Navigator.push(context,
                           MaterialPageRoute(builder: (context) => Settings())),
                       child: itemBox(
                         s1: "Settings",

@@ -57,10 +57,7 @@ class _MembershipSocialState extends State<MembershipSocial> {
                 children: [
                   Container(
                     child: InkWell(
-                      onTap: () => Navigator.pushAndRemoveUntil(
-                          context,
-                          MaterialPageRoute(builder: (context) => Home()),
-                          (route) => false),
+                      onTap: () => Navigator.pop(context),
                       child: Icon(
                         Icons.close,
                         size: 50,
@@ -141,7 +138,6 @@ class _MembershipSocialState extends State<MembershipSocial> {
                       child: Text("GO TO DASHBOARD"),
 
                       // ignore: prefer_const_constructors
-                      
                     ),
                   ),
                   SizedBox(

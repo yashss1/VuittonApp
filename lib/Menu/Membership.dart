@@ -57,10 +57,7 @@ class _MembershipState extends State<Membership> {
                 children: [
                   Container(
                     child: InkWell(
-                      onTap: () => Navigator.pushAndRemoveUntil(
-                          context,
-                          MaterialPageRoute(builder: (context) => Home()),
-                          (route) => false),
+                      onTap: () => Navigator.pop(context),
                       child: Icon(
                         Icons.close,
                         size: 50,

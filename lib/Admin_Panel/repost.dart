@@ -118,7 +118,7 @@ class _RepostsState extends State<Reposts> {
                                     SizedBox(height: 10),
                                     InkWell(
                                       onTap: () {
-                                        Navigator.pushReplacement(
+                                        Navigator.push(
                                           context,
                                           MaterialPageRoute(
                                             builder: (context) =>
